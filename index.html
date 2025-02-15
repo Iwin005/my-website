@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Name</title>
+    <title>Iwin Samraj D</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -13,51 +13,43 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Two-color gradient */
+            background: linear-gradient(135deg, white, red); /* White to Red Gradient */
             color: white;
+            text-align: center;
             overflow: hidden;
         }
 
-        .container {
-            font-size: 3rem;
-            font-weight: bold;
-            border-right: 4px solid white; /* Cursor effect */
-            white-space: nowrap;
-            overflow: hidden;
-            width: 0;
-            animation: typing 4s steps(12, end) forwards, blink 0.7s infinite;
+        img {
+            width: 200px; /* Adjust image size */
+            height: auto;
+            border-radius: 50%; /* Circular Image */
+            border: 4px solid black; /* Black border */
         }
 
-        /* Typing Animation */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+        h1, h2, h3 {
+            text-shadow: 2px 2px 4px black; /* Black outline */
         }
 
-        /* Cursor Blinking */
-        @keyframes blink {
-            50% { border-color: transparent; }
+        h1 {
+            font-size: 2.5rem;
         }
 
-        /* Changing Text Colors */
-        .container span {
-            animation: colorChange 4s infinite;
+        h2 {
+            font-size: 2rem;
         }
 
-        @keyframes colorChange {
-            0% { color: #FF5733; }  /* Red */
-            25% { color: #FFC300; } /* Yellow */
-            50% { color: #33FF57; } /* Green */
-            75% { color: #3399FF; } /* Blue */
-            100% { color: #FF5733; } /* Back to Red */
+        h3 {
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <span>Hello, I am Iwin Samraj</span>
-    </div>
+    <img src="59542 (1)-Photoroom.jpg" alt="Iwin Samraj">
+    <h1>IWIN SAMRAJ D</h1>
+    <h2>EC (ACT)</h2>
+    <h3>Chennai Institute of Technology</h3>
 </body>
 </html>
