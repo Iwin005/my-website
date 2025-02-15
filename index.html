@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Animated Name</title>
-    
+    <title>Animated Name</title>
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
@@ -15,31 +15,49 @@
             align-items: center;
             height: 100vh;
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Two-color gradient */
+            color: white;
             overflow: hidden;
         }
 
-        h1 {
-            color: #333;
+        .container {
             font-size: 3rem;
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
+            font-weight: bold;
+            border-right: 4px solid white; /* Cursor effect */
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 4s steps(12, end) forwards, blink 0.7s infinite;
         }
 
-        /* Animation */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        /* Typing Animation */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Cursor Blinking */
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        /* Changing Text Colors */
+        .container span {
+            animation: colorChange 4s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { color: #FF5733; }  /* Red */
+            25% { color: #FFC300; } /* Yellow */
+            50% { color: #33FF57; } /* Green */
+            75% { color: #3399FF; } /* Blue */
+            100% { color: #FF5733; } /* Back to Red */
         }
     </style>
 </head>
 <body>
-    <h1>Hello, I am Iwin Samraj</h1>
+    <div class="container">
+        <span>Hello, I am Iwin Samraj</span>
+    </div>
 </body>
 </html>
